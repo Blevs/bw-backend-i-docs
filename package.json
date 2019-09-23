@@ -8,9 +8,11 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "docs": "apidoc -i ./ -e node_modules -o ./docs"
   },
   "dependencies": {
+    "apidoc": "^0.17.7",
     "express": "^4.17.1",
     "knex": "^0.19.4",
     "sqlite3": "^4.1.0"

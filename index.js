@@ -10,5 +10,7 @@ server.use('/owners', ownersRouter);
 const petsRouter = require('./pets/pets-router.js');
 server.use('/pets', petsRouter);
 
+server.use('/docs', express.static('./docs'));
+
 const port = process.env.PORT || 5000;
 server.listen(port, () => console.log(`Server listening on ${port}`));
